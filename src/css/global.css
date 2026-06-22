@@ -1,0 +1,90 @@
+#popupBody {
+  height: auto;
+  margin: 0;
+  background: var(--theme-ui-colors-background);
+  font-family: "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#popupBody,
+#subreddits {
+  scrollbar-color: var(--theme-ui-colors-border) rgba(0, 0, 0, 0) !important;
+  scrollbar-width: thin !important;
+}
+
+#popupBody::-webkit-scrollbar,
+#subreddits::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+#popupBody::-webkit-scrollbar-thumb,
+#subreddits::-webkit-scrollbar-thumb {
+  background: var(--theme-ui-colors-border);
+  border-radius: 2px;
+}
+
+.orbitCommentBody p {
+  margin: 7px 0;
+  line-height: 22px;
+}
+
+.orbitCommentBody p:last-child {
+  margin: 7px 0 0 0;
+}
+
+.orbitCommentBody blockquote {
+  border-left: 2px solid var(--theme-ui-colors-border);
+  padding: 0 8px;
+  margin: 2px 0 2px 5px;
+}
+
+.orbitCommentBody .md h1,
+.orbitCommentBody .md h2 {
+  font-size: 20px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.orbitCommentBody a {
+  color: var(--theme-ui-colors-primary);
+  text-decoration: none;
+}
+
+.orbitCommentBody a:hover {
+  text-decoration: underline;
+}
+
+.orbitCommentBody table {
+  border-collapse: collapse;
+}
+
+.orbitCommentBody .md td,
+.orbitCommentBody .md th {
+  border: 1px solid var(--theme-ui-colors-border);
+  text-align: left;
+}
+
+.orbitCommentBody .md pre,
+.orbitCommentBody .md .-cells,
+.orbitCommentBody .md th,
+.orbitCommentBody .md td {
+  padding: 4px 9px;
+}
+
+.orbitCommentBody .md .-lists,
+.md ul,
+.md ol {
+  padding-left: 40px;
+  line-height: 22px;
+}
+
+.orbitCommentBody code {
+  white-space: pre-line;
+}
+
+#redditImgWrap {
+  margin: 16px 0 -52px 0;
+  display: none;
+}

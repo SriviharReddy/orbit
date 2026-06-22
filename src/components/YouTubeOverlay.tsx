@@ -1,0 +1,31 @@
+/** YouTubeOverlay — Reddit icon that floats over YouTube to switch back to Reddit comments.
+ *  Reconstructed from `Wn` in bundle. */
+import React from 'react';
+import { Button } from 'theme-ui';
+import { Flex } from 'theme-ui';
+import { showRedditComments } from '../utils';
+
+const YouTubeOverlay: React.FC = () => (
+  <Flex sx={{ width: '100%', justifyContent: 'flex-end', alignItems: 'flex-end', position: 'relative' }}>
+    <Button
+      onClick={showRedditComments}
+      sx={{
+        all: 'unset',
+        cursor: 'pointer',
+        transition: '.1s linear',
+        'svg > path': { fill: 'button' },
+        ':hover': { opacity: 0.8 },
+      }}
+    >
+      {/* Reddit alien SVG — exact path from original bundle */}
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" version="1.1" viewBox="0 0 36 36">
+        <path
+          strokeWidth="1.125"
+          d="M31.601 0A4.4 4.4 0 0136 4.399V31.6A4.401 4.401 0 0131.601 36H4.4A4.401 4.401 0 010 31.601V4.4A4.4 4.4 0 014.399 0zm-.242 18.677a2.924 2.924 0 00-4.95-2.104c-2-1.44-4.753-2.373-7.82-2.479l1.331-6.266 4.352.924a2.084 2.084 0 004.167-.099 2.081 2.081 0 00-3.953-.922l-4.86-1.033a.522.522 0 00-.618.403l-1.487 6.99c-3.112.087-5.91 1.02-7.935 2.478a2.924 2.924 0 10-3.217 4.774 5.782 5.782 0 00-.07.885c0 4.499 5.236 8.145 11.694 8.145 6.46 0 11.696-3.646 11.696-8.145 0-.296-.025-.59-.068-.878a2.923 2.923 0 001.738-2.673zm-8.4 7.608c-1.425 1.423-4.157 1.534-4.96 1.534-.803 0-3.535-.111-4.958-1.534a.541.541 0 01.765-.765c.899.897 2.82 1.217 4.194 1.217 1.373 0 3.294-.32 4.194-1.219a.542.542 0 01.765.766zm-.368-3.43a2.091 2.091 0 01-2.088-2.087 2.092 2.092 0 012.088-2.09 2.092 2.092 0 012.09 2.09 2.091 2.091 0 01-2.09 2.088zm-11.277-2.089a2.092 2.092 0 012.09-2.089c1.15 0 2.087.937 2.087 2.09a2.09 2.09 0 01-2.088 2.087 2.09 2.09 0 01-2.089-2.088z"
+        />
+      </svg>
+    </Button>
+  </Flex>
+);
+
+export default YouTubeOverlay;
