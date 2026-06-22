@@ -85,34 +85,47 @@ orbit-src/
 
 ---
 
-## Getting Started
+## Installation & Setup
 
-### Prerequisites
+### Option 1: Quick Install (Pre-built Release)
+
+1. Download the latest extension archive (`orbit-v1.0.0.zip`) from the [GitHub Releases](https://github.com/SriviharReddy/orbit/releases).
+2. Extract the downloaded zip file into a folder of your choice.
+3. Open your Google Chrome or Chromium-based browser (Brave, Edge, Vivaldi, etc.) and navigate to `chrome://extensions` (or `edge://extensions` for Edge).
+4. Enable **Developer mode** using the toggle switch in the top-right corner.
+5. Click the **Load unpacked** button in the top-left corner.
+6. Select the extracted folder (which contains the `manifest.json` file).
+
+---
+
+### Option 2: Build from Source
+
+#### Prerequisites
 
 - [Node.js](https://nodejs.org/) v16+
 - npm
 
-### Install dependencies
+#### Install dependencies
 
 ```bash
 npm install
 ```
 
-### Build
+#### Build
 
 ```bash
 npm run build
 ```
 
-Output goes to `dist/`.
+The output bundle will be generated in `dist/`.
 
-### Development (watch mode)
+#### Development (watch mode)
 
 ```bash
 npm run dev
 ```
 
-### Load in Chrome
+#### Load built extension in Chrome
 
 1. Go to `chrome://extensions`
 2. Enable **Developer mode** (top right)
