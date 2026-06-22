@@ -21,6 +21,55 @@ Orbit replaces YouTube's comment section with the corresponding Reddit discussio
 
 ---
 
+## Installation & Setup
+
+### Option 1: Quick Install (Pre-built Release)
+
+1. Download the latest extension archive (`orbit-v1.0.0.zip`) from the [GitHub Releases](https://github.com/SriviharReddy/orbit/releases).
+2. Extract the downloaded zip file into a folder of your choice.
+3. Open your Google Chrome or Chromium-based browser (Brave, Edge, Vivaldi, etc.) and navigate to `chrome://extensions` (or `edge://extensions` for Edge).
+4. Enable **Developer mode** using the toggle switch in the top-right corner.
+5. Click the **Load unpacked** button in the top-left corner.
+6. Select the extracted folder (which contains the `manifest.json` file).
+
+---
+
+### Option 2: Build from Source
+
+#### Prerequisites
+
+- [Node.js](https://nodejs.org/) v16+
+- npm
+
+#### Install dependencies
+
+```bash
+npm install
+```
+
+#### Build
+
+```bash
+npm run build
+```
+
+The output bundle will be generated in `dist/`.
+
+#### Development (watch mode)
+
+```bash
+npm run dev
+```
+
+#### Load built extension in Chrome
+
+1. Go to `chrome://extensions`
+2. Enable **Developer mode** (top right)
+3. Click **Load unpacked**
+4. Select the `dist/` folder
+
+---
+
 ## Project Structure
 
 ```
@@ -82,55 +131,6 @@ orbit-src/
 | Bundler | Webpack 5 |
 | Transpiler | Babel |
 | Extension API | Chrome Manifest V3 |
-
----
-
-## Installation & Setup
-
-### Option 1: Quick Install (Pre-built Release)
-
-1. Download the latest extension archive (`orbit-v1.0.0.zip`) from the [GitHub Releases](https://github.com/SriviharReddy/orbit/releases).
-2. Extract the downloaded zip file into a folder of your choice.
-3. Open your Google Chrome or Chromium-based browser (Brave, Edge, Vivaldi, etc.) and navigate to `chrome://extensions` (or `edge://extensions` for Edge).
-4. Enable **Developer mode** using the toggle switch in the top-right corner.
-5. Click the **Load unpacked** button in the top-left corner.
-6. Select the extracted folder (which contains the `manifest.json` file).
-
----
-
-### Option 2: Build from Source
-
-#### Prerequisites
-
-- [Node.js](https://nodejs.org/) v16+
-- npm
-
-#### Install dependencies
-
-```bash
-npm install
-```
-
-#### Build
-
-```bash
-npm run build
-```
-
-The output bundle will be generated in `dist/`.
-
-#### Development (watch mode)
-
-```bash
-npm run dev
-```
-
-#### Load built extension in Chrome
-
-1. Go to `chrome://extensions`
-2. Enable **Developer mode** (top right)
-3. Click **Load unpacked**
-4. Select the `dist/` folder
 
 ---
 
